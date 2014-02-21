@@ -5,11 +5,18 @@ import java.util.HashMap;
 
 public class EightPuzzleRunner
 {
-    public static int main(String[] args){
+    public static void main(String[] args){
 
-        System.out.println("" + args[0]);
+        // take in a command line string and load it into the puzzle
+        // array
+        // I'm not doing any exception handling, so hopefully we got
+        // everything right in the command line
+        int j = 0;
+        int[] puzzle = new int[9];
+        for (char c : args[0].toCharArray())
+            puzzle[j++] = Character.getNumericValue(c);
+
         // initialize the problem
-        int puzzle[] = {1,2,3,4,5,6,7,8,0};
         int sol[] = new int[] {1,2,3,4,5,6,7,8,0};
         
         EightPuzzle sol_puzzle = new EightPuzzle(sol, 0);
@@ -32,7 +39,7 @@ public class EightPuzzleRunner
                 // that we were given
                 make_path(sol_puzzle.stringify(), path);
                 System.out.println("Number of Nodes:" + current.node_count());
-                return 0;
+                System.exit(0);
             }
             
             closed.add(current);
@@ -57,7 +64,7 @@ public class EightPuzzleRunner
             }
 
         }
-        return 1;
+        System.exit(1);
 
     }
 
