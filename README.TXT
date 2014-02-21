@@ -1,12 +1,20 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+To Compile
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+javac EightPuzzle.java EightPuzzleComparator.java EightPuzzleRunner.java
+
+to run a single instance of the program
+
+java EightPuzzleRunner "123456780" -- where 123456780 is the state of a puzzle. 0 Represents a blank space.
+
+the goal state is hard coded as 
+
+123
+456
+780
+
+
+Running EightPuzzle.sh will run a predetermined sequence of puzzles
+
+
+
+Heuristic is hardcoded into the EightPuzzle class, so you will need to change the code and recompile in order to test out the two different ones 

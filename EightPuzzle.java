@@ -15,8 +15,8 @@ public class EightPuzzle implements Comparable<EightPuzzle>
         puzzle = p;
         g_value = g;
 
-        //h_value = h_manhattan(puzzle);
-        h_value = h_displaced(puzzle);
+        h_value = h_manhattan(puzzle);
+        //h_value = h_displaced(puzzle);
 
         f_value = h_value + g_value;
 
