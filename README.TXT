@@ -1,4 +1,4 @@
-To Compile
+T Compile
 
 javac EightPuzzle.java EightPuzzleComparator.java EightPuzzleRunner.java
 
@@ -15,6 +15,15 @@ the goal state is hard coded as
 
 Running EightPuzzle.sh will run a predetermined sequence of puzzles
 
-
-
 Heuristic is hardcoded into the EightPuzzle class, so you will need to change the code and recompile in order to test out the two different ones 
+
+
+
+HammingResult.txt contains the number of nodes and the shortest
+path as obtained using the Hamming Heuristic
+
+ManhattanResult.txt contains the number of nodes and the shortest
+path as obtained using the Manhattan Heuristic
+
+hardest_8puzzle.txt contains the number of nodes and the shortest
+path on a hard puzzle, using the Manahattan Heuristic
